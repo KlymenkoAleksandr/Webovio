@@ -1,0 +1,78 @@
+@import 'mixins';
+
+.awesome-project {
+    padding: 150px 0 166px 0;
+    &__caption {
+        padding-left: 164px;
+        @include flex-container();
+        @extend %flex-align;
+        h3 {
+            @extend %line-height;
+            padding-right: 134px;
+        }
+        p{
+            @extend %paragraph;
+        }
+    }
+    &__wall {
+        padding-top: 110px;
+        @include flex-container();
+        &__block {
+            @extend %relative;
+            .autor-wraper {
+                bottom: -64px;
+                right: -40px;
+            }
+        }
+        &__caption {
+            @extend %caption-padding;
+            h3 {
+                @extend %h3-padding;
+            }
+            p {
+                @extend %paragraph;
+            }
+        }
+    }
+    &__3D-model {
+        padding-top: 166px;
+        @include flex-container(flex-end);
+        &__block {
+            @extend %relative;
+            .autor-wraper {
+                bottom: -34px;
+                left: -40px;
+            }
+        }
+        &__caption {
+            padding-top: 80px;
+            padding-right: 112px;
+            h3 {
+                @extend %h3-padding;
+            }
+            p {
+                @extend %paragraph;
+            }
+        }
+    }
+    &__booking {
+        padding-top: 135px;
+        @include flex-container();
+        &__block {
+            @extend %relative;
+            .autor-wraper {
+                bottom: -40px;
+                right: -40px;
+            }
+        }
+        &__caption {
+            @extend %caption-padding;
+            h3 {
+                @extend %h3-padding;
+            }
+            p {
+                @extend %paragraph;
+            }
+        }
+    }
+}

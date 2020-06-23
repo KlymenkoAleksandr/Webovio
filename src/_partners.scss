@@ -1,0 +1,13 @@
+.partners {
+    padding: 60px 166px 54px 66px;
+    max-width: 1276px;
+    background-color: $white;
+    box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
+    border-radius: 2px;
+    position: absolute;
+    bottom: -115px;
+    right: 0;
+    a:not(:last-child) {
+        padding-right: 62px;
+    }
+}

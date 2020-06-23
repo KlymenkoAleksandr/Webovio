@@ -1,0 +1,87 @@
+@import 'reset';
+@import 'mixins';
+@import 'banner';
+@import 'dropdown-menu';
+@import 'partners';
+@import 'stategy';
+@import 'awesome-project';
+@import 'best-way';
+@import 'footer';
+
+body {
+    font-family: 'Poppins', 'sans-serif';
+    color: $main-color;
+    max-width: 1440px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+h1 {
+    @extend %header;
+}
+h3 {
+    @extend %font-weight;
+    font-size: 36px;
+    @include custom-line-height(1.28);
+}
+h4 {
+    font-weight: 500;
+    font-size: 24px;
+    @include custom-line-height(1.4);
+    text-transform: uppercase;
+}
+h5 {
+    @extend %font-weight;
+    font-size: 16px;
+    @include custom-line-height(2.35);
+    text-transform: uppercase;
+    color: $white;
+    padding-bottom: 22px;
+}
+
+.autor-wraper {
+    position: absolute;
+    padding: 30px;
+    background-color: $white;
+    box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
+    border-radius: 8px;
+    blockquote {
+        @include custom-line-height(1.6);
+        font-style: italic;
+    }
+    .autor {
+        @include flex-container();
+        @extend %flex-align;
+        padding-top: 24px;
+        &__info {
+            padding-left: 14px;
+            p {
+                @extend %font-weight;
+                @extend %line-height;
+            }
+            span {
+                font-size: 14px;
+                @extend %line-height;
+                color: #152934;
+            }
+        }
+    }
+}
+
+.see-more {
+    display: inline-block;
+    margin-top: 90px;
+    @extend %see-more;
+    @extend %vert-align;
+    &:hover {
+        @extend %gold-color;
+    }
+}
+
+.read-more {
+    @extend %see-more;
+    @extend %vert-align;
+    &:hover {
+        @extend %gold-color;
+    }
+}

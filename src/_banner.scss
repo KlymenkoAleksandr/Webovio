@@ -1,0 +1,33 @@
+@import 'mixins';
+.banner-wraper {
+    position: relative;
+}
+.banner {
+    padding: 24px 166px 210px;
+    background: url(../images/banner.jpg) no-repeat center / cover;
+    color: $white;
+    &__header {
+        @include flex-container(space-between);
+        min-height: 214px;
+    }
+    &__description {
+        span {
+            font-size: 14px;
+            @extend %line-height;
+        }
+        h1 {
+            padding: 22px 0 24px;
+        }
+        p {
+            @include custom-line-height(1.6);
+            padding-bottom: 44px;
+        }
+        a {
+            @extend %see-more;
+            @extend %gold-color;
+            i {
+                @extend %vert-align;
+            }
+        }
+    }
+}

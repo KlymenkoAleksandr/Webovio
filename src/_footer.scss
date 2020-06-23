@@ -1,0 +1,101 @@
+@import 'mixins';
+
+.footer-wraper {
+    @extend %relative;
+    margin-top: 172px;
+    background: url(../images/call-to-action.jpg) no-repeat center / cover;
+    color: #B6C197;
+    .footer__header {
+        padding: 60px 290px 80px 164px;
+        background-color: #FAFAFA;
+        box-shadow: 50px 130px 100px rgba(0, 0, 0, 0.145947);
+        width: 1275px;
+        height: 362px;
+        position: absolute;
+        left: 0;
+        top: -162px;
+        h2 {
+            padding-bottom: 50px;
+            @extend %header;
+            color: $main-color;
+            margin: 0;
+        }
+        a {
+            font-family: 'FontAwesome', 'sans-serif';
+            font-size: 16px;
+            @include custom-line-height(1.1);
+            color: #D4D6D4;
+            &:hover {
+                @extend %gold-color;
+            }        
+        }
+    }
+    .footer {
+        padding: 310px 164px 30px;
+        .contacts {
+            @include flex-container();
+            padding-bottom: 52px;
+            .phone {
+                padding-right: 128px;
+            }
+            span {
+                @include custom-line-height(2.25);
+            }
+            p {
+                color: $white;
+                @include custom-line-height(2.25);
+                @extend %font-weight;
+            }
+        }
+        &__navigation {
+            @include flex-container();
+            padding: 60px 0;
+            border-top: 1px solid #5D6544;;
+            &__services {
+                padding-right: 78px;
+            }
+            &__help {
+                padding-right: 100px;
+            }
+            &__company {
+                padding-right: 124px;
+                .footer__navigation__list-item {
+                    min-width: 168px;
+                }
+            }
+            &__list-item {
+                min-width: 160px;
+                a {
+                color: #B6C197;
+                text-decoration: none;
+                @include custom-line-height(2.25);
+                }
+            }
+            &__social {
+                p {
+                    @include custom-line-height(1.6);
+                }
+                .email {
+                    @extend %font-weight;
+                    font-size: 24px;
+                    @include custom-line-height(1.55);
+                    color: $white;
+                    padding: 24px 0 20px;
+                }
+            }
+        }
+    }
+}
+
+
+footer {
+    @include flex-container(space-between);
+    align-items: flex-end;
+    min-height: 60px;
+    padding-right: 26px;
+    p {
+        font-size: 14px;
+        @extend %line-height;
+        padding-bottom: 2px;
+    }
+}

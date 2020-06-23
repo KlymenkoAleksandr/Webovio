@@ -1,0 +1,619 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h3, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box; }
+
+.banner__description span, .stategy__description span, .stategy__cite__signature span, .stategy__cite__signature p, .awesome-project__caption h3, footer p, .autor-wraper .autor__info p, .autor-wraper .autor__info span {
+  line-height: 1.5; }
+
+.footer-wraper .footer__header h2, h1, .stategy__cite__signature p, .footer-wraper .footer .contacts p, .footer-wraper .footer__navigation__social .email, h3, h5, .autor-wraper .autor__info p {
+  font-weight: 600; }
+
+.banner__description a, .see-more, .read-more {
+  font-family: 'FontAwesome', 'sans-serif';
+  font-size: 16px;
+  line-height: 1.1;
+  color: #D4D6D4; }
+
+.banner__description a, .footer-wraper .footer__header a:hover, .see-more:hover, .read-more:hover {
+  color: #FFD723; }
+
+.stategy__description p, .awesome-project__caption p, .awesome-project__wall__caption p, .awesome-project__3D-model__caption p, .awesome-project__booking__caption p {
+  line-height: 1.6;
+  font-size: 16px;
+  color: rgba(33, 56, 66, 0.6); }
+
+.awesome-project__wall__caption, .awesome-project__booking__caption {
+  padding-top: 80px;
+  padding-left: 96px; }
+
+.awesome-project__wall__block, .awesome-project__3D-model__block, .awesome-project__booking__block, .footer-wraper {
+  position: relative; }
+
+.awesome-project__wall__caption h3, .awesome-project__3D-model__caption h3, .awesome-project__booking__caption h3 {
+  padding-bottom: 24px; }
+
+.awesome-project__caption, .autor-wraper .autor {
+  align-items: center; }
+
+.banner__description a i, .see-more, .read-more {
+  vertical-align: middle; }
+
+.footer-wraper .footer__header h2, h1 {
+  font-size: 60px;
+  line-height: 1.25; }
+
+.banner__description span, .stategy__description span, .stategy__cite__signature span, .stategy__cite__signature p, .awesome-project__caption h3, footer p, .autor-wraper .autor__info p, .autor-wraper .autor__info span {
+  line-height: 1.5; }
+
+.footer-wraper .footer__header h2, h1, .stategy__cite__signature p, .footer-wraper .footer .contacts p, .footer-wraper .footer__navigation__social .email, h3, h5, .autor-wraper .autor__info p {
+  font-weight: 600; }
+
+.banner__description a, .see-more, .read-more {
+  font-family: 'FontAwesome', 'sans-serif';
+  font-size: 16px;
+  line-height: 1.1;
+  color: #D4D6D4; }
+
+.banner__description a, .footer-wraper .footer__header a:hover, .see-more:hover, .read-more:hover {
+  color: #FFD723; }
+
+.stategy__description p, .awesome-project__caption p, .awesome-project__wall__caption p, .awesome-project__3D-model__caption p, .awesome-project__booking__caption p {
+  line-height: 1.6;
+  font-size: 16px;
+  color: rgba(33, 56, 66, 0.6); }
+
+.awesome-project__wall__caption, .awesome-project__booking__caption {
+  padding-top: 80px;
+  padding-left: 96px; }
+
+.awesome-project__wall__block, .awesome-project__3D-model__block, .awesome-project__booking__block, .footer-wraper {
+  position: relative; }
+
+.awesome-project__wall__caption h3, .awesome-project__3D-model__caption h3, .awesome-project__booking__caption h3 {
+  padding-bottom: 24px; }
+
+.awesome-project__caption, .autor-wraper .autor {
+  align-items: center; }
+
+.banner__description a i, .see-more, .read-more {
+  vertical-align: middle; }
+
+.footer-wraper .footer__header h2, h1 {
+  font-size: 60px;
+  line-height: 1.25; }
+
+.banner-wraper {
+  position: relative; }
+
+.banner {
+  padding: 24px 166px 210px;
+  background: url(../images/banner.jpg) no-repeat center/cover;
+  color: #ffffff; }
+  .banner__header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 214px; }
+  .banner__description span {
+    font-size: 14px; }
+  .banner__description h1 {
+    padding: 22px 0 24px; }
+  .banner__description p {
+    line-height: 1.6;
+    padding-bottom: 44px; }
+
+.banner__description span, .stategy__description span, .stategy__cite__signature span, .stategy__cite__signature p, .awesome-project__caption h3, footer p, .autor-wraper .autor__info p, .autor-wraper .autor__info span {
+  line-height: 1.5; }
+
+.footer-wraper .footer__header h2, h1, .stategy__cite__signature p, .footer-wraper .footer .contacts p, .footer-wraper .footer__navigation__social .email, h3, h5, .autor-wraper .autor__info p {
+  font-weight: 600; }
+
+.banner__description a, .see-more, .read-more {
+  font-family: 'FontAwesome', 'sans-serif';
+  font-size: 16px;
+  line-height: 1.1;
+  color: #D4D6D4; }
+
+.banner__description a, .footer-wraper .footer__header a:hover, .see-more:hover, .read-more:hover {
+  color: #FFD723; }
+
+.stategy__description p, .awesome-project__caption p, .awesome-project__wall__caption p, .awesome-project__3D-model__caption p, .awesome-project__booking__caption p {
+  line-height: 1.6;
+  font-size: 16px;
+  color: rgba(33, 56, 66, 0.6); }
+
+.awesome-project__wall__caption, .awesome-project__booking__caption {
+  padding-top: 80px;
+  padding-left: 96px; }
+
+.awesome-project__wall__block, .awesome-project__3D-model__block, .awesome-project__booking__block, .footer-wraper {
+  position: relative; }
+
+.awesome-project__wall__caption h3, .awesome-project__3D-model__caption h3, .awesome-project__booking__caption h3 {
+  padding-bottom: 24px; }
+
+.awesome-project__caption, .autor-wraper .autor {
+  align-items: center; }
+
+.banner__description a i, .see-more, .read-more {
+  vertical-align: middle; }
+
+.footer-wraper .footer__header h2, h1 {
+  font-size: 60px;
+  line-height: 1.25; }
+
+.dropdown {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-end; }
+  .dropdown #dropdown__toggle {
+    display: none; }
+    .dropdown #dropdown__toggle:checked ~ label > .dropdown__icon::before {
+      content: '✕'; }
+    .dropdown #dropdown__toggle:checked ~ .dropdown__menu {
+      opacity: 1; }
+    .dropdown #dropdown__toggle:checked ~ .dropdown__menu > .dropdown__menu__item {
+      display: block; }
+  .dropdown__icon {
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: relative;
+    color: black; }
+    .dropdown__icon::before {
+      content: '☰';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .dropdown__menu {
+    transition: .3s ease;
+    opacity: 0;
+    text-align: right;
+    margin-top: -10px;
+    margin-right: 18px; }
+    .dropdown__menu__item {
+      display: none;
+      padding: 10px;
+      background-color: #ffffff; }
+      .dropdown__menu__item:hover {
+        background-color: #4D533C; }
+      .dropdown__menu__item:hover > a {
+        color: #ffffff; }
+      .dropdown__menu__item:not(:last-child) {
+        border-bottom: 1px solid #4D533C; }
+      .dropdown__menu__item a {
+        text-decoration: none;
+        color: #4D533C; }
+
+.partners {
+  padding: 60px 166px 54px 66px;
+  max-width: 1276px;
+  background-color: #ffffff;
+  box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
+  border-radius: 2px;
+  position: absolute;
+  bottom: -115px;
+  right: 0; }
+  .partners a:not(:last-child) {
+    padding-right: 62px; }
+
+.banner__description span, .stategy__description span, .stategy__cite__signature span, .stategy__cite__signature p, .awesome-project__caption h3, footer p, .autor-wraper .autor__info p, .autor-wraper .autor__info span {
+  line-height: 1.5; }
+
+.footer-wraper .footer__header h2, h1, .stategy__cite__signature p, .footer-wraper .footer .contacts p, .footer-wraper .footer__navigation__social .email, h3, h5, .autor-wraper .autor__info p {
+  font-weight: 600; }
+
+.banner__description a, .see-more, .read-more {
+  font-family: 'FontAwesome', 'sans-serif';
+  font-size: 16px;
+  line-height: 1.1;
+  color: #D4D6D4; }
+
+.banner__description a, .footer-wraper .footer__header a:hover, .see-more:hover, .read-more:hover {
+  color: #FFD723; }
+
+.stategy__description p, .awesome-project__caption p, .awesome-project__wall__caption p, .awesome-project__3D-model__caption p, .awesome-project__booking__caption p {
+  line-height: 1.6;
+  font-size: 16px;
+  color: rgba(33, 56, 66, 0.6); }
+
+.awesome-project__wall__caption, .awesome-project__booking__caption {
+  padding-top: 80px;
+  padding-left: 96px; }
+
+.awesome-project__wall__block, .awesome-project__3D-model__block, .awesome-project__booking__block, .footer-wraper {
+  position: relative; }
+
+.awesome-project__wall__caption h3, .awesome-project__3D-model__caption h3, .awesome-project__booking__caption h3 {
+  padding-bottom: 24px; }
+
+.awesome-project__caption, .autor-wraper .autor {
+  align-items: center; }
+
+.banner__description a i, .see-more, .read-more {
+  vertical-align: middle; }
+
+.footer-wraper .footer__header h2, h1 {
+  font-size: 60px;
+  line-height: 1.25; }
+
+.stategy {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 150px; }
+  .stategy__description {
+    padding: 244px 160px 0 0; }
+    .stategy__description span {
+      font-size: 14px;
+      color: rgba(77, 83, 60, 0.9); }
+    .stategy__description h3 {
+      padding-top: 30px;
+      padding-bottom: 34px; }
+    .stategy__description p {
+      padding-bottom: 42px; }
+  .stategy__cite {
+    max-width: 474px;
+    padding: 244px 44px 60px 40px;
+    box-shadow: 0px 100px 100px rgba(0, 0, 0, 0.145947); }
+    .stategy__cite > p {
+      font-style: italic;
+      font-size: 24px;
+      line-height: 1.66; }
+    .stategy__cite__signature {
+      display: flex;
+      justify-content: flex-start;
+      padding-top: 50px; }
+      .stategy__cite__signature span {
+        color: #152934; }
+      .stategy__cite__signature p {
+        font-size: 22px; }
+      .stategy__cite__signature__autor {
+        padding-left: 30px;
+        padding-top: 16px; }
+
+.banner__description span, .stategy__description span, .stategy__cite__signature span, .stategy__cite__signature p, .awesome-project__caption h3, footer p, .autor-wraper .autor__info p, .autor-wraper .autor__info span {
+  line-height: 1.5; }
+
+.footer-wraper .footer__header h2, h1, .stategy__cite__signature p, .footer-wraper .footer .contacts p, .footer-wraper .footer__navigation__social .email, h3, h5, .autor-wraper .autor__info p {
+  font-weight: 600; }
+
+.banner__description a, .see-more, .read-more {
+  font-family: 'FontAwesome', 'sans-serif';
+  font-size: 16px;
+  line-height: 1.1;
+  color: #D4D6D4; }
+
+.banner__description a, .footer-wraper .footer__header a:hover, .see-more:hover, .read-more:hover {
+  color: #FFD723; }
+
+.stategy__description p, .awesome-project__caption p, .awesome-project__wall__caption p, .awesome-project__3D-model__caption p, .awesome-project__booking__caption p {
+  line-height: 1.6;
+  font-size: 16px;
+  color: rgba(33, 56, 66, 0.6); }
+
+.awesome-project__wall__caption, .awesome-project__booking__caption {
+  padding-top: 80px;
+  padding-left: 96px; }
+
+.awesome-project__wall__block, .awesome-project__3D-model__block, .awesome-project__booking__block, .footer-wraper {
+  position: relative; }
+
+.awesome-project__wall__caption h3, .awesome-project__3D-model__caption h3, .awesome-project__booking__caption h3 {
+  padding-bottom: 24px; }
+
+.awesome-project__caption, .autor-wraper .autor {
+  align-items: center; }
+
+.banner__description a i, .see-more, .read-more {
+  vertical-align: middle; }
+
+.footer-wraper .footer__header h2, h1 {
+  font-size: 60px;
+  line-height: 1.25; }
+
+.awesome-project {
+  padding: 150px 0 166px 0; }
+  .awesome-project__caption {
+    padding-left: 164px;
+    display: flex;
+    justify-content: flex-start; }
+    .awesome-project__caption h3 {
+      padding-right: 134px; }
+  .awesome-project__wall {
+    padding-top: 110px;
+    display: flex;
+    justify-content: flex-start; }
+    .awesome-project__wall__block .autor-wraper {
+      bottom: -64px;
+      right: -40px; }
+  .awesome-project__3D-model {
+    padding-top: 166px;
+    display: flex;
+    justify-content: flex-end; }
+    .awesome-project__3D-model__block .autor-wraper {
+      bottom: -34px;
+      left: -40px; }
+    .awesome-project__3D-model__caption {
+      padding-top: 80px;
+      padding-right: 112px; }
+  .awesome-project__booking {
+    padding-top: 135px;
+    display: flex;
+    justify-content: flex-start; }
+    .awesome-project__booking__block .autor-wraper {
+      bottom: -40px;
+      right: -40px; }
+
+.banner__description span, .stategy__description span, .stategy__cite__signature span, .stategy__cite__signature p, .awesome-project__caption h3, footer p, .autor-wraper .autor__info p, .autor-wraper .autor__info span {
+  line-height: 1.5; }
+
+.footer-wraper .footer__header h2, h1, .stategy__cite__signature p, .footer-wraper .footer .contacts p, .footer-wraper .footer__navigation__social .email, h3, h5, .autor-wraper .autor__info p {
+  font-weight: 600; }
+
+.banner__description a, .see-more, .read-more {
+  font-family: 'FontAwesome', 'sans-serif';
+  font-size: 16px;
+  line-height: 1.1;
+  color: #D4D6D4; }
+
+.banner__description a, .footer-wraper .footer__header a:hover, .see-more:hover, .read-more:hover {
+  color: #FFD723; }
+
+.stategy__description p, .awesome-project__caption p, .awesome-project__wall__caption p, .awesome-project__3D-model__caption p, .awesome-project__booking__caption p {
+  line-height: 1.6;
+  font-size: 16px;
+  color: rgba(33, 56, 66, 0.6); }
+
+.awesome-project__wall__caption, .awesome-project__booking__caption {
+  padding-top: 80px;
+  padding-left: 96px; }
+
+.awesome-project__wall__block, .awesome-project__3D-model__block, .awesome-project__booking__block, .footer-wraper {
+  position: relative; }
+
+.awesome-project__wall__caption h3, .awesome-project__3D-model__caption h3, .awesome-project__booking__caption h3 {
+  padding-bottom: 24px; }
+
+.awesome-project__caption, .autor-wraper .autor {
+  align-items: center; }
+
+.banner__description a i, .see-more, .read-more {
+  vertical-align: middle; }
+
+.footer-wraper .footer__header h2, h1 {
+  font-size: 60px;
+  line-height: 1.25; }
+
+.best-way {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 150px 0; }
+  .best-way h3 {
+    padding-bottom: 60px; }
+  .best-way__cart-wraper {
+    display: flex;
+    justify-content: flex-start; }
+  .best-way__cart {
+    padding: 26px 30px 36px; }
+    .best-way__cart:not(:last-child) {
+      margin-right: 30px; }
+    .best-way__cart h4 {
+      padding-bottom: 20px; }
+    .best-way__cart p {
+      font-size: 14px;
+      line-height: 2.1;
+      color: rgba(33, 56, 66, 0.6);
+      min-height: 146px;
+      padding-bottom: 30px; }
+
+.banner__description span, .stategy__description span, .stategy__cite__signature span, .stategy__cite__signature p, .awesome-project__caption h3, footer p, .autor-wraper .autor__info p, .autor-wraper .autor__info span {
+  line-height: 1.5; }
+
+.footer-wraper .footer__header h2, h1, .stategy__cite__signature p, .footer-wraper .footer .contacts p, .footer-wraper .footer__navigation__social .email, h3, h5, .autor-wraper .autor__info p {
+  font-weight: 600; }
+
+.banner__description a, .see-more, .read-more {
+  font-family: 'FontAwesome', 'sans-serif';
+  font-size: 16px;
+  line-height: 1.1;
+  color: #D4D6D4; }
+
+.banner__description a, .footer-wraper .footer__header a:hover, .see-more:hover, .read-more:hover {
+  color: #FFD723; }
+
+.stategy__description p, .awesome-project__caption p, .awesome-project__wall__caption p, .awesome-project__3D-model__caption p, .awesome-project__booking__caption p {
+  line-height: 1.6;
+  font-size: 16px;
+  color: rgba(33, 56, 66, 0.6); }
+
+.awesome-project__wall__caption, .awesome-project__booking__caption {
+  padding-top: 80px;
+  padding-left: 96px; }
+
+.awesome-project__wall__block, .awesome-project__3D-model__block, .awesome-project__booking__block, .footer-wraper {
+  position: relative; }
+
+.awesome-project__wall__caption h3, .awesome-project__3D-model__caption h3, .awesome-project__booking__caption h3 {
+  padding-bottom: 24px; }
+
+.awesome-project__caption, .autor-wraper .autor {
+  align-items: center; }
+
+.banner__description a i, .see-more, .read-more {
+  vertical-align: middle; }
+
+.footer-wraper .footer__header h2, h1 {
+  font-size: 60px;
+  line-height: 1.25; }
+
+.footer-wraper {
+  margin-top: 172px;
+  background: url(../images/call-to-action.jpg) no-repeat center/cover;
+  color: #B6C197; }
+  .footer-wraper .footer__header {
+    padding: 60px 290px 80px 164px;
+    background-color: #FAFAFA;
+    box-shadow: 50px 130px 100px rgba(0, 0, 0, 0.145947);
+    width: 1275px;
+    height: 362px;
+    position: absolute;
+    left: 0;
+    top: -162px; }
+    .footer-wraper .footer__header h2 {
+      padding-bottom: 50px;
+      color: #4D533C;
+      margin: 0; }
+    .footer-wraper .footer__header a {
+      font-family: 'FontAwesome', 'sans-serif';
+      font-size: 16px;
+      line-height: 1.1;
+      color: #D4D6D4; }
+  .footer-wraper .footer {
+    padding: 310px 164px 30px; }
+    .footer-wraper .footer .contacts {
+      display: flex;
+      justify-content: flex-start;
+      padding-bottom: 52px; }
+      .footer-wraper .footer .contacts .phone {
+        padding-right: 128px; }
+      .footer-wraper .footer .contacts span {
+        line-height: 2.25; }
+      .footer-wraper .footer .contacts p {
+        color: #ffffff;
+        line-height: 2.25; }
+    .footer-wraper .footer__navigation {
+      display: flex;
+      justify-content: flex-start;
+      padding: 60px 0;
+      border-top: 1px solid #5D6544; }
+      .footer-wraper .footer__navigation__services {
+        padding-right: 78px; }
+      .footer-wraper .footer__navigation__help {
+        padding-right: 100px; }
+      .footer-wraper .footer__navigation__company {
+        padding-right: 124px; }
+        .footer-wraper .footer__navigation__company .footer__navigation__list-item {
+          min-width: 168px; }
+      .footer-wraper .footer__navigation__list-item {
+        min-width: 160px; }
+        .footer-wraper .footer__navigation__list-item a {
+          color: #B6C197;
+          text-decoration: none;
+          line-height: 2.25; }
+      .footer-wraper .footer__navigation__social p {
+        line-height: 1.6; }
+      .footer-wraper .footer__navigation__social .email {
+        font-size: 24px;
+        line-height: 1.55;
+        color: #ffffff;
+        padding: 24px 0 20px; }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-height: 60px;
+  padding-right: 26px; }
+  footer p {
+    font-size: 14px;
+    padding-bottom: 2px; }
+
+body {
+  font-family: 'Poppins', 'sans-serif';
+  color: #4D533C;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-size: 16px; }
+
+h3 {
+  font-size: 36px;
+  line-height: 1.28; }
+
+h4 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.4;
+  text-transform: uppercase; }
+
+h5 {
+  font-size: 16px;
+  line-height: 2.35;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-bottom: 22px; }
+
+.autor-wraper {
+  position: absolute;
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
+  border-radius: 8px; }
+  .autor-wraper blockquote {
+    line-height: 1.6;
+    font-style: italic; }
+  .autor-wraper .autor {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 24px; }
+    .autor-wraper .autor__info {
+      padding-left: 14px; }
+      .autor-wraper .autor__info span {
+        font-size: 14px;
+        color: #152934; }
+
+.see-more {
+  display: inline-block;
+  margin-top: 90px; }
+
+/*# sourceMappingURL=main.css.map */

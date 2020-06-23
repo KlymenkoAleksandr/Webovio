@@ -1,0 +1,65 @@
+@mixin flex-container($horisontal: flex-start) {
+    display: flex;
+    justify-content: $horisontal;
+}
+
+$one-and-half: 1.5;
+
+%line-height {
+    line-height: $one-and-half;
+}
+
+@mixin custom-line-height($value) {
+    line-height: $value;
+}
+%font-weight {
+    font-weight: 600;
+}
+
+%see-more {
+    font-family: 'FontAwesome', 'sans-serif';
+    font-size: 16px;
+    line-height: 1.1;
+    color: #D4D6D4;
+}
+
+%gold-color {
+    color: #FFD723;
+}
+
+%paragraph {
+    @include custom-line-height(1.6);
+    font-size: 16px;
+    color: rgba(33, 56, 66, 0.6);
+}
+
+%caption-padding {
+    padding-top: 80px;
+    padding-left: 96px;
+}
+
+%relative {
+    position: relative;
+}
+
+%h3-padding {
+    padding-bottom: 24px;
+}
+
+%flex-align {
+    align-items: center;
+}
+
+%vert-align {
+    vertical-align: middle;
+}
+
+$white: #ffffff;
+
+%header {
+    @extend %font-weight;
+    font-size: 60px;
+    @include custom-line-height(1.25);
+}
+
+$main-color: #4D533C;

@@ -1,0 +1,49 @@
+@import 'mixins';
+
+.stategy {
+    @include flex-container(center);
+    padding-bottom: 150px;
+    &__description {
+        padding: 244px 160px 0 0;
+        span {
+            font-size: 14px;
+            @extend %line-height;
+            color: rgba(77, 83, 60, 0.9);
+        }
+        h3 {
+            padding-top: 30px;
+            padding-bottom: 34px;
+        }
+        p {
+            @extend %paragraph;
+            padding-bottom: 42px;
+        }
+    }
+    &__cite {
+        max-width: 474px;
+        padding: 244px 44px 60px 40px;
+        box-shadow: 0px 100px 100px rgba(0, 0, 0, 0.145947);
+        &>p {
+            font-style: italic;
+            font-size: 24px;
+            @include custom-line-height(1.66)
+        }
+        &__signature {
+            @include flex-container();
+            padding-top: 50px;
+            span {
+                @extend %line-height;
+                color: #152934;
+            }
+            p {
+                @extend %font-weight;
+                font-size: 22px;
+                @extend %line-height;
+            }
+            &__autor {
+                padding-left: 30px;
+                padding-top: 16px;
+            }
+        }
+    }
+}
