@@ -245,6 +245,8 @@ table {
   position: absolute;
   bottom: -115px;
   right: 0; }
+  .partners a {
+    text-decoration: none; }
   .partners a:not(:last-child) {
     padding-right: 62px; }
 
